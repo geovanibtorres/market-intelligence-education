@@ -1,29 +1,24 @@
 # Higher-Education Market Intelligence Model
 
-A reference implementation of a **market intelligence analytical model** for
-the Brazilian higher-education sector, built on top of two public datasets
-(institutional census microdata and the public regulatory consultation
-portal) and overlaid with an internal — fully anonymized here — customer
-and cluster layer that allows commercial teams to answer questions like:
+This project is a sanitized, portfolio-ready implementation of a market intelligence analytics model for the Brazilian higher education sector.
 
-- Which institutions exist in the market, and what is their size, profile
-  and academic quality index over the last five censuses?
-- Which of those institutions are part of a larger educational **group**
-  or **holding**, and how should we cluster them commercially?
-- Which institutions are **active customers** of the vendor, which are
-  **inactive**, and which have **never been customers**?
-- How does the picture change when we cross-reference institutions with
-  their **course-level** offering (modality, area of knowledge, enrollment
-  size, etc.)?
+It combines public datasets (Census microdata and regulatory information) with an abstracted commercial overlay to support strategic questions such as:
 
-This repository is a **generic, anonymized portfolio version** of a
-production analytics model. Public dataset names and column names are
-preserved only when they come from publicly available sources (Censup
-microdata, e-MEC public consultation). Everything proprietary —
-commercial cluster definitions, customer status, contract metadata, real
-group names, real CNPJs — has been replaced with neutral equivalents. The
-goal is to showcase the **modeling pattern, source-overlay reasoning, and
-dashboard data contract**, not any proprietary content.
+- Which institutions exist in the market and how they evolve over time
+- Which institutions belong to larger educational groups or holdings
+- Market whitespace and expansion opportunities
+- Course-level growth and cross-sell potential
+
+This repository focuses on architecture, data modeling and analytical reasoning. All proprietary information (clients, contracts, identifiers, internal classifications) has been fully anonymized.
+
+
+## Key Highlights
+
+- Multi-source integration (public + internal overlay)
+- Time-aware modeling (5-year rolling window + historical access)
+- Data isolation between public and commercial layers
+- Scalable data pipeline pattern using Tableau Prep
+- Dashboard-ready analytical views with data blending strategy
 
 ---
 
